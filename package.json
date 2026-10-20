@@ -1,0 +1,22 @@
+{
+  "name": "anon-feedback",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Minimal anonymous feedback app",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node --env-file=.env src/server.js",
+    "migrate": "node --env-file=.env scripts/migrate.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "pg": "^8.16.0"
+  },
+  "devDependencies": {
+    "supertest": "^7.1.0"
+  }
+}
